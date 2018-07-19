@@ -99,5 +99,5 @@ C:\Users\ravisyaniya\Documents\Visual Studio 2017\Projects\Webapicrud\Webapicrud
 C:\Users\ravisyaniya\Documents\Visual Studio 2017\Projects\Webapicrud\Webapicrud\obj\Debug\Webapicrud.csprojResolveAssemblyReference.cache
 C:\Users\ravisyaniya\Documents\Visual Studio 2017\Projects\Webapicrud\Webapicrud\obj\Debug\Webapicrud.dll
 C:\Users\ravisyaniya\Documents\Visual Studio 2017\Projects\Webapicrud\Webapicrud\obj\Debug\Webapicrud.pdb
-C:\Users\ravisyaniya\documents\visual studio 2017\Projects\Webapicrud\Webapicrud\obj\Debug\Webapicrud.Migrations.app.resources
-C:\Users\ravisyaniya\documents\visual studio 2017\Projects\Webapicrud\Webapicrud\obj\Debug\Webapicrud.csproj.GenerateResource.Cache
+C:\Users\ravisyaniya\Documents\Visual Studio 2017\Projects\Webapicrud\Webapicrud\obj\Debug\Webapicrud.Migrations.due.resources
+C:\Users\ravisyaniya\Documents\Visual Studio 2017\Projects\Webapicrud\Webapicrud\obj\Debug\Webapicrud.csproj.GenerateResource.Cache

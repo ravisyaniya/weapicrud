@@ -8,6 +8,7 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+
     this.state = {
       books: []
     };
@@ -20,6 +21,14 @@ class App extends Component {
         console.log(this.state.books);
       });
   }
+  delete(id) {
+    console.log(id);
+    axios.delete('http://localhost:49666/api/Employee/' + id)
+      .then((result) => {
+        this.props.history.push("/")
+      });
+  }
+
 
   render() {
     return (
@@ -52,9 +61,12 @@ class App extends Component {
                     <td>{book.isbn}</td>
                     <td>{book.title}</td>
                     <td>{book.author}</td>
-                    <Link to={`/edit/${book.id}`} class="btn btn-success">Edit</Link>|
-                    <Link to={`/delete/${book.id}`} class="btn btn-danger">Delete</Link>
-                    {/* <td> <button onClick={this.delete.bind(book._id)} class="btn btn-danger">Delete</button></td> */}
+                    <td><Link to={`/edit/${book.id}`} class="btn btn-success">Edit</Link>|
+
+
+<Link to={'/'} onClick={this.delete.bind(this, book.id)} class="btn btn-danger">Delete</Link>
+
+                    </td>
                   </tr>
                 )}
               </tbody>

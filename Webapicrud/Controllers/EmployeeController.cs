@@ -24,6 +24,19 @@ namespace Webapicrud.Controllers
             return db.Employees;
         }
 
+        public IHttpActionResult GetEmployees(long id)
+        {
+            Employee employee = db.Employees.Find(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            return Ok(employee);
+        }
+
+
+
+
 
         // PUT api/Employee/5
         public IHttpActionResult PutEmployee(int id, Employee employee)
@@ -58,7 +71,7 @@ namespace Webapicrud.Controllers
             db.Employees.Add(employee);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = employee.isbn }, employee);
+            return CreatedAtRoute("DefaultApi", new { id = employee.id }, employee);
         }
 
         // DELETE api/Employee/5
@@ -88,7 +101,7 @@ namespace Webapicrud.Controllers
 
         private bool EmployeeExists(int id)
         {
-            return db.Employees.Count(e => e.isbn == id) > 0;
+            return db.Employees.Count(e => e.id == id) > 0;
         }
     }
 }
